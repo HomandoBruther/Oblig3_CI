@@ -21,14 +21,13 @@ def test_is_not_leap_year_but_divisible_by_four():
 
 
 @pytest.mark.parametrize("year, expected", [(2000, True),
-                                            (1800, True)])
+                                            (1600, True)])
 def test_leap_year_divisible_by_400(year, expected):
     assert isLeapYear(year) == expected
 
 
-
 def test_leap_year_divisible_by_4_but_not_100():
-    assert isLeapYear(1622) == True
+    assert isLeapYear(1616) == True
 
 
 # ekstra regel som eliminerer år delbare på 4000.
