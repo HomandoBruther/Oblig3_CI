@@ -26,6 +26,7 @@ def test_leap_year_divisible_by_400(year, expected):
     assert isLeapYear(year) == expected
 
 
+
 def test_leap_year_divisible_by_4_but_not_100():
     assert isLeapYear(1622) == True
 
